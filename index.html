@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuille de présence</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- CDN ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header avec les button -->
+    <header>
+        <h1>Local Storage, feuille de présence</h1>
+        <button id="delete">Clear Storage</button>
+        <button id="add">Ajouter des stagiaires</button>
+        <i class="fas fa-info"></i>
+    </header>
+    <hr>
+    <!--Section main page  -->
+    <section>
+        <div>
+            <p>liste des stagiaires: </p>
+            <ul></ul>
+        </div>
+
+        <div>
+            <button id="plus">Liste des codings</button>
+            <div class="listPara">
+                <p >Coding School 16:</p>
+                <ul class="detailplus"></ul>
+                <p >Autre :</p>
+                <ul class="detailplusAutre"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal add Stagiaire -->
+    <aside>
+        <div class="card">
+            <form>
+                <button class="x">X</button>
+                <label for="">Ajout de stagiaire</label> <br>
+                <input type="text" placeholder="Nom - Prénom"> <br>
+                <input type="text" placeholder="Son âge"> <br>
+                <input type="text" placeholder="Sa coding school ?"> <br>
+                <button id="btn">Ajouter</button>
+            </form>
+        </div>
+    </aside>
+    <!-- Modal Information utile -->
+    <aside>
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-question"></i>
+            </div>
+            <div class="title">
+                <h1>Information utile</h1>
+            </div>
+            <hr>
+            <div class="body-card">
+
+                <p> <span class="detail">Ville :</span> <span id="city">...</span></p>
+                <P><span class="detail">Pays : </span> <span id="region">...</span></P>
+                <P><span class="detail">IP :</span> <span id="ip">...</span></P>
+
+                <hr>
+
+                <P> <span class="detail">Date du jour :</span>  <span id="date"></span></P>
+                <P> <span class="detail">Heure actuelle :</span> <span id="heure"></span></P>
+            </div>
+            <div class="close">
+                <button>Close</button>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- SCRIPT -->
+    <script src="./public/js/main.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/modal.js"></script>
+</body>
+
+</html>
